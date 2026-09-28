@@ -1,13 +1,13 @@
 #include <assert.h>
 #include <stdio.h>
 
-int total_kopecks(int a, int b, int n);
+int full_kilometers(int meters);
 
 int main() {
-    assert(total_kopecks(1, 50, 3) == 450);
-    assert(total_kopecks(0, 99, 2) == 198);
-    assert(total_kopecks(2, 0, 5) == 1000);
-    assert(total_kopecks(3, 25, 0) == 0);
+    assert(full_kilometers(1500) == 1);
+    assert(full_kilometers(2000) == 2);
+    assert(full_kilometers(999) == 0);
+    assert(full_kilometers(12345) == 12);
     printf("Все тесты пройдены!\n");
     return 0;
 }
